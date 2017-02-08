@@ -1,0 +1,609 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>提问的智慧（3） | 陈素封·读立写生</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="cnFeat">
+    
+    <meta name="description" itemprop="description" content="提问在学习中占据着重要的位置，很多人对知识好奇，却收效甚少，原因他们是尚未掌握正确提问的方法，因此，我尝试修改《提问的智慧》，发布出来。原作者是Eric S. Raymond，这篇文章在黑客界拥有很高的地位，指引无数黑客前进，希望对你有用。">
+    
+    
+    
+    
+    <link rel="alternative" href="/atom.xml" title="陈素封·读立写生" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+</head>
+
+  <body>
+    <header>
+      <div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="陈素封·读立写生" title="陈素封·读立写生"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="陈素封·读立写生">陈素封·读立写生</a></h1>
+				<h2 class="blog-motto">专注自我心智成长，每天千字践行一年，微信公众号「cnFeat」</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">首页</a></li>
+					
+						<li><a href="/archives">文章列表</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="Search" />
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2014/05/20/2014-05-20-How-To-Ask-Questions-The-Smart-Way（3）/" title="提问的智慧（3）" itemprop="url">提问的智慧（3）</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="http://www.cnfeat.com/about" title="cnFeat" target="_blank" itemprop="author">cnFeat</a>
+		
+  <p class="article-time">
+    <time datetime="2014-05-20T13:36:05.000Z" itemprop="datePublished"> 发表于 2014-05-20</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#使用易于读取且标准的文件格式发送问题"><span class="toc-number">1.</span> <span class="toc-text">使用易于读取且标准的文件格式发送问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#准确简练地描述问题"><span class="toc-number">2.</span> <span class="toc-text">准确简练地描述问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#话不在多，精炼最好"><span class="toc-number">3.</span> <span class="toc-text">话不在多，精炼最好</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#别急于宣称找到bug"><span class="toc-number">4.</span> <span class="toc-text">别急于宣称找到bug</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#跪求也不能解决问题"><span class="toc-number">5.</span> <span class="toc-text">跪求也不能解决问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#描述症状，不做猜测"><span class="toc-number">6.</span> <span class="toc-text">描述症状，不做猜测</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#按时间顺序描述问题症状"><span class="toc-number">7.</span> <span class="toc-text">按时间顺序描述问题症状</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#描述目标而不是过程"><span class="toc-number">8.</span> <span class="toc-text">描述目标而不是过程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#不要请求私下回复"><span class="toc-number">9.</span> <span class="toc-text">不要请求私下回复</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#精准地提问"><span class="toc-number">10.</span> <span class="toc-text">精准地提问</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#如何提问关于代码的问题"><span class="toc-number">11.</span> <span class="toc-text">如何提问关于代码的问题</span></a></li></ol>
+		
+		</div>
+		
+		<h2 id="使用易于读取且标准的文件格式发送问题">使用易于读取且标准的文件格式发送问题</h2>
+<p><strong>本章阅读提示</strong>[14]。</p>
+<p>如果你将问题搞得复制难以阅读，它多半会被忽略，人们更愿读易懂的问题，所以：</p>
+<ul>
+<li><ol>
+<li>使用纯文本而不是HTML格式；</li>
+</ol>
+</li>
+<li><ol>
+<li>发送邮件时如有附件，记得添加附件，同时记得检查附件内容是否能正常打开；</li>
+</ol>
+</li>
+<li><ol>
+<li>不要发送整段的文字，尝试将文字按主题分段；</li>
+</ol>
+</li>
+<li><ol>
+<li>发送数据时应该发送原始数据，让回复者看到的东西与你看到的一样；</li>
+</ol>
+</li>
+<li><ol>
+<li>很多邮件程序并不支持「Quoted-Printable」MIME编码，所以谨慎使用；</li>
+</ol>
+</li>
+<li><ol>
+<li>不要指望黑客们阅读封闭格式的文档，诸如微软公司的Word或Excel文件等。大多数黑客讨厌这种文件格式。即使他们能够处理，也很厌恶这么做；</li>
+</ol>
+</li>
+<li><ol>
+<li>如果你用Windows操作系统发送电子邮件，关闭微软的「引用」功能，以免在你的邮件中出现乱码；</li>
+</ol>
+</li>
+<li><ol>
+<li>切勿在在论坛勿滥用「表情符号」和「HTML」功能。使用一两个表情符号还可以，但使用过多的花哨彩色文本会使人认为你无法表达出你的意思。过滥地使用表情符号、色彩和字体会让看起来更傻逼；</li>
+</ol>
+</li>
+</ul>
+<p>如果你是使用图形界面的邮件客户端程序(如腾讯的Foxmail、微软公司的Outlook)，注意它们的默认配置不一定满足以上的这些要求。不过大多数这类程序有「查看源码」的命令，可以用它来检查发件箱的消息，确保发送的是没有乱码的纯文本文件。</p>
+<p><strong>【本章注释】</strong></p>
+<p>[14]在本章中作者使用大量的计算机术语，我已尽量简化处理，同时，我认为以上的方法并不适合大多数的提问者，所以我在此总结一下适合普通用户的文件格式：</p>
+<ul>
+<li><ol>
+<li>Txt：直接粘贴，方便阅读；</li>
+</ol>
+</li>
+<li><ol>
+<li>Pdf：文件规范，推荐使用；</li>
+</ol>
+</li>
+<li><ol>
+<li>Doc：使用广泛，打开方便；</li>
+</ol>
+</li>
+<li><ol>
+<li>Md：Markdown文本，未来趋势。</li>
+</ol>
+</li>
+</ul>
+<p>邮件送发建议使用网页端，邮件客户端推荐使用Outlook2013或Foxmail 7。</p>
+<h2 id="准确简练地描述问题">准确简练地描述问题</h2>
+<p>问题的描述应该包含以下内容：</p>
+<ul>
+<li><ol>
+<li>清晰的细节；</li>
+</ol>
+</li>
+<li><ol>
+<li>问题发生的环境(主机品牌、操作系统、应用程序，任何相关的)，提供销售商的发行版和版本号（如：「Fedora Core 7」、「Slackware 9.1」等）；</li>
+</ol>
+</li>
+<li><ol>
+<li>提问前做过的调查研究及对其的理解；</li>
+</ol>
+</li>
+<li><ol>
+<li>提问前为确定问题而采取的诊断步骤；</li>
+</ol>
+</li>
+<li><ol>
+<li>最近对计算机或软件配置的任何相关改变；</li>
+</ol>
+</li>
+<li><ol>
+<li>如果可能，提供在可控环境下重现问题的方法；</li>
+</ol>
+</li>
+</ul>
+<p>做大的努力预测黑客会提到的问题，并提前备好答案。</p>
+<p>如果你认为是代码有问题，在可控环境下重现问题，并向黑客提供报告，这个的方法尤其重要。当你这么做时，你大有可能获得及时而有效的回复。</p>
+<p>西蒙.泰瑟姆（Simon Tatham）曾写过一篇<a href="http://www.chiark.greenend.org.uk/~sgtatham/bugs.html" target="_blank" rel="external">《如何有效报告bug》</a>的文章，我强烈推荐各位阅读。</p>
+<h2 id="话不在多，精炼最好">话不在多，精炼最好</h2>
+<p>你应该精炼且简要地描述问题，简单地将堆砌代码或罗列数据是没有用的。如果你有一个体积庞大且复杂的测试样本，尝试将其裁剪，越小越好。</p>
+<p>至少有三个理由支持以上这点。第一，让别人看到你在努力简化问题的过程，这会使你更有可能得到回复。第二，简化的问题更容易得到回复。第三，在简化的过程中，你有可能自己就找到了解决办法。</p>
+<h2 id="别急于宣称找到bug">别急于宣称找到bug</h2>
+<p>当你在一个软件中遇到问题时，除非你非常、非常的有根据，否则不要动辄声称找到了bug。提示：除非你能提供解决问题的源代码补丁，或者在前一版本的回归测试收集了足够的证据，否则你都不能够完全确信。对于网页和文档也如此，如果你声称发现了文档的「bug」，你应该提供可以替代的解决方案。</p>
+<p>记住，还有许多用户并未经历你遇到的问题，否则你在阅读文档或搜索网页时早应该发现了（疑问：你在报怨前已经搜索过了，是吧？）。这也意味着很有可能是你弄错了，而不是软件本身有问题。</p>
+<p>编写软件的人总会非常努力地优化修正这个软件。所以，如果你声称找到了bug，这是对他们能力的质疑，即使你是对的，也有可能会使某些人人感到不爽。此外，在标题中寻找「bug」也是相当不厚道的行为。</p>
+<p>即使你私下已经非常确信发现一个真正的bug，你在提交问题时最好也写得像是你做错了什么。这样，如果是真有bug，你会在回复中获知，同时，维护者会向你道歉，这总比你无心破坏而欠下一个道歉要好。</p>
+<h2 id="跪求也不能解决问题">跪求也不能解决问题</h2>
+<p>有些人明白不应该采用粗鲁或傲慢的方式提问并要求得到答复，所以他们走了另一个极端，转而低声下气地哀求：「我知道我只是个可怜的菜鸟，一个loser，但……」。这种对实际问题含糊的描述特别令人反感，不但困扰，也没有用。</p>
+<p>别用低级灵长类动物的老办法浪费时间，相反，尽可能清楚地描述背景情况和你的问题，这比摆出卑贱态度更有用，同时这也是对自己的重新定位。</p>
+<p>有的论坛专门设置了新手提问区，如果你真的认为遇到了新手该遇到的问题，直接到那去提问就好，别再跪求了。</p>
+<h2 id="描述症状，不做猜测">描述症状，不做猜测</h2>
+<p>向黑客陈述你的猜测是没有用的（如果你的诊断理论真的那么有用，你还会向别人求助吗？）。所以，你只需要告诉他们问题的原始状态，而不是你的解释和理论，让他们来解释和诊断。如果你真的认为自己的猜测很重要，那么你就应该清楚地说明这只是你的猜测，并解释为什么不起作用。</p>
+<p><strong>愚蠢的提问：</strong>我在编译内核时接连遇到SIG11错误，怀疑主板上的某根电路丝断了，找到它们的最好办法是什么？</p>
+<p><strong>明智的提问：</strong>我组装的电脑（K6/233 CPU、FIC-PA2007 主板[威盛 Apollo VP2 芯片组]、Corsair PC133 SDRAM 256Mb 内存）最近在开机20分钟左右、做内核编译时频繁地报错，提示SIG11 ，但在头20分钟内从不出问题。重启动不会复位时钟，但会整夜关机。更换所有内存未解决问题，相关的典型编译会话日志附后。</p>
+<p>鉴于不是每个人都不能做到明智的提问，所以这里有一句话可以给到你启示：「所有的诊断专家都来自密苏里州」。美国国务院的官方座右铭则是「让我看看」（Show me）[15]，对回复者而言，这并不是质疑，而只是一种真实而有用的需求，以便让他们看到与你看到一样的原始证据，目睹尽可能一致的东西，而不是你的片面的猜测与总结。（所以）让我们看看（Show me）。</p>
+<p><strong>【本章注释】</strong></p>
+<p>[15]「让我看看」出自国会议员威勒德.D.范迪弗［Willard D. Vandiver］在1899年时的讲话：「我来自一个出产玉米、棉花、牛蒡和民主党人的国家，滔滔雄辩既不能说服我，也不会让我满意。我来自密苏里州，你必须让我看看。」大意是我不相信别人的描述，我只相信我眼前的事实。</p>
+<h2 id="按时间顺序描述问题症状">按时间顺序描述问题症状</h2>
+<p>解决问题最有效的线索就是问题之前发生的情况。所以，在问题描述汇中应准确地记录你、电脑和软件在崩溃前的情况。在命令行处理的情况下，对话日志（如运行脚本工具生成的）的记录会非常有帮助。</p>
+<p>如果崩溃的程序有诊断选项，试着选择能在能生成排错日志的选项。记住，「多」不等于「好」。试着选取适当的排错级别，以便提供有用的信息。</p>
+<p>如果你的问题记录很长（如超过四段），在开头简述问题，随后按时间先后描述详细过程也许更有用。这样黑客在阅读你的记录时就知道该注意哪些内容了。</p>
+<h2 id="描述目标而不是过程">描述目标而不是过程</h2>
+<p>如果你想知道如何做某事（而不是报告一个bug），你需要在开头就表明你的目标，然后再陈述你遇到问题。</p>
+<p>经常出现这种一种情况：寻求技术帮助的人在脑中里有个更高层次的目标，他们自以为按自己的路走能达成目的，但在中途却被卡住了，又跑来问该怎么走，他们从来没有意识到这条路本身有问题，所以他们往往更折腾才能达成目的</p>
+<p><strong>愚蠢的提问：</strong>我怎样才能让某图形程序的颜色拾取器取得十六进制的RGB值？</p>
+<p><strong>明智的提问：</strong>我正试着用自己选定数值的颜色替换一幅图片的色表，我现在知道的唯一方法是编辑每个表槽，但却无法让某图形程序的颜色拾取器取得十六进制的RGB值。</p>
+<p>第二种提法是明智的，它会获得更合适的回答：建议采用更合适的工具来完成任务。</p>
+<h2 id="不要请求私下回复">不要请求私下回复</h2>
+<p>黑客们认为问题的解决过程应该公开、透明，这样就会有更多的人参与到此问题的解决，如果有知识渊博，经验更丰富的人发现了这个问题，他们就会留意到回答中不完整或不准确的地方，那么原来的回答就会被纠正修复。同时，这些人的能力和学识也会被其他同行看到而得到赏识。</p>
+<p>而当你要求私下回复时，以上的纠正过程就会被中止，所以，不要请求私下回复，要让回复者来决定是否私下回复。实际上，如果他真的私下回复你了，通常是因为他认为问题太差或者太肤浅，自己给出的答案对其它人也毫无意义，那就发给你吧。</p>
+<p>这条规则也有一个例外，如果你确定该提问可能会带来大量雷同的回复时，那么你可以主动表示：「请向我发电子邮件，我将为论坛统一归纳这些回复」。你这个举动是非常值得赞扬的，因为你将论坛从洪水般雷同的回复中解救出来。最后，最重要的一点，你必须言出必行。</p>
+<h2 id="精准地提问">精准地提问</h2>
+<p>漫无边际的问题通常被视为时间黑洞，回答这些问题需要付出更多的时间和精力，只有最忙的人才会给你最有用答案，但这些人对于时间黑洞极其敏感，所以他们比较讨厌那些漫无边际的问题。</p>
+<p>如果你明确指认了让回复者做的事（如指点方向、发送代码、检查补丁或其它），你更有可能得到有用的回复。（因为）这样可以让他们集中精力去解决问题，并间接地设定了他们为帮助你需要花费的时间和精力上限，这是很好的做法。</p>
+<p>如果你想要向专家提问，你可以这样设想：你去到一个金库，可是你只有一点点的时间。专家就像金库，如果你想在尽可能短的时间来换取更多的价值，你就要向他们提出一个精准的问题。</p>
+<p>所以，为了让专家能够用尽量少的时间来回答你的问题，你最好限定问题的范围。限定问题范围与简化问题是不一样的。举个例，「请问可否指点一下哪有好一点关于X的解释？」通常就要比「请解释一下X」来得明智。再譬如，如果你的代码运行不了，「请别人看看哪有问题」就比「叫他们帮你改正」更加明智。</p>
+<h2 id="如何提问关于代码的问题">如何提问关于代码的问题</h2>
+<p>不要直接要求别人给你修正代码，而应该提问如何入手解决这个问题，如果你一上来就一段几百行的代码，说你这里有bug提示出错，你能帮我找出来吗？这样的请求只会被直接无视，而如果你精简代码，明确地描述问题：在第七行以后，本应该显示<x>，但实际出现的是<y>，如何处理？这样就大大提高问题被回答的几率。</y></x></p>
+<p>最精确描述代码问题的方法是提供一个能展现问题的最小测试样本。什么是最小测试样本？它是可以集中展现问题，只需要能够刚好重现问题的代码即可。如何生成一个最小测试样本？如果你知道哪一行或哪一段代码会产生问题，将其复制并提供刚好够用的外围支撑代码以构成一个完整的样本（够用是指源码刚好能被编译器、解释器或任何处理它的程序所接受）。如果你不能将问题缩小到特定的段落，复制源代码并去除那些与问题无关的代码段。你能提供的最小测试样例本越小越好（参见《浓缩精华》这一章节 ）。</p>
+<p>用最小测试样本去测试bug也并不是万能的，但这毕竟是一个很好的尝试，这有助于帮助你独立去解决问题，即使你找不到，黑客们也喜欢看到曾经你努力过，这将使他们跟你合作去解决这个问题。</p>
+<p>如果你只是想让别人帮忙审核一下代码，在最开头就要说出来，并且一定要提到你认为哪一部分特别需要关注以及为什么。</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/知识管理与学习/">知识管理与学习</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/提问/">提问</a><a href="/tags/知识管理/">知识管理</a><a href="/tags/黑客/">黑客</a>
+  </div>
+
+</div>
+
+
+<div class="article-share" id="share">
+
+  <div data-url="http://www.cnfeat.com/2014/05/20/2014-05-20-How-To-Ask-Questions-The-Smart-Way（3）/" data-title="提问的智慧（3） | 陈素封·读立写生" data-tsina="207775270" class="share clearfix">
+  </div>
+
+</div>
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2014/05/21/2014-05-21-the-sincerity-of-smartisan/" title="锤子的诚意">
+  <strong>上一篇：</strong><br/>
+  <span>
+  锤子的诚意</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2014/05/19/2014-05-19-How-To-Ask-Questions-The-Smart-Way（2）/"  title="提问的智慧（2）">
+ <strong>下一篇：</strong><br/> 
+ <span>提问的智慧（2）
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section class="comment">
+	<div class="ds-thread"></div>
+</section>
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#使用易于读取且标准的文件格式发送问题"><span class="toc-number">1.</span> <span class="toc-text">使用易于读取且标准的文件格式发送问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#准确简练地描述问题"><span class="toc-number">2.</span> <span class="toc-text">准确简练地描述问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#话不在多，精炼最好"><span class="toc-number">3.</span> <span class="toc-text">话不在多，精炼最好</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#别急于宣称找到bug"><span class="toc-number">4.</span> <span class="toc-text">别急于宣称找到bug</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#跪求也不能解决问题"><span class="toc-number">5.</span> <span class="toc-text">跪求也不能解决问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#描述症状，不做猜测"><span class="toc-number">6.</span> <span class="toc-text">描述症状，不做猜测</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#按时间顺序描述问题症状"><span class="toc-number">7.</span> <span class="toc-text">按时间顺序描述问题症状</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#描述目标而不是过程"><span class="toc-number">8.</span> <span class="toc-text">描述目标而不是过程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#不要请求私下回复"><span class="toc-number">9.</span> <span class="toc-text">不要请求私下回复</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#精准地提问"><span class="toc-number">10.</span> <span class="toc-text">精准地提问</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#如何提问关于代码的问题"><span class="toc-number">11.</span> <span class="toc-text">如何提问关于代码的问题</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+			<li><a href="/categories/101商业思考/" title="101商业思考">101商业思考<sup>15</sup></a></li>
+		
+			<li><a href="/categories/个人总结/" title="个人总结">个人总结<sup>15</sup></a></li>
+		
+			<li><a href="/categories/停下来思考/" title="停下来思考">停下来思考<sup>22</sup></a></li>
+		
+			<li><a href="/categories/写作训练系列日志/" title="写作训练系列日志">写作训练系列日志<sup>1</sup></a></li>
+		
+			<li><a href="/categories/千字文与写作/" title="千字文与写作">千字文与写作<sup>48</sup></a></li>
+		
+			<li><a href="/categories/吐槽的能力/" title="吐槽的能力">吐槽的能力<sup>12</sup></a></li>
+		
+			<li><a href="/categories/好片乐趣烂片情趣/" title="好片乐趣烂片情趣">好片乐趣烂片情趣<sup>5</sup></a></li>
+		
+			<li><a href="/categories/如果你不懂艺术/" title="如果你不懂艺术">如果你不懂艺术<sup>4</sup></a></li>
+		
+			<li><a href="/categories/微博观察/" title="微博观察">微博观察<sup>7</sup></a></li>
+		
+			<li><a href="/categories/杂记/" title="杂记">杂记<sup>2</sup></a></li>
+		
+			<li><a href="/categories/爱情的味道/" title="爱情的味道">爱情的味道<sup>8</sup></a></li>
+		
+			<li><a href="/categories/知识管理与学习/" title="知识管理与学习">知识管理与学习<sup>84</sup></a></li>
+		
+			<li><a href="/categories/读书的乐趣/" title="读书的乐趣">读书的乐趣<sup>73</sup></a></li>
+		
+			<li><a href="/categories/这就是生活/" title="这就是生活">这就是生活<sup>81</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			<li><a href="/tags/知识管理/" title="知识管理">知识管理<sup>56</sup></a></li>
+		
+			<li><a href="/tags/学习/" title="学习">学习<sup>35</sup></a></li>
+		
+			<li><a href="/tags/写作/" title="写作">写作<sup>31</sup></a></li>
+		
+			<li><a href="/tags/千字文/" title="千字文">千字文<sup>26</sup></a></li>
+		
+			<li><a href="/tags/总结/" title="总结">总结<sup>23</sup></a></li>
+		
+			<li><a href="/tags/思考/" title="思考">思考<sup>17</sup></a></li>
+		
+			<li><a href="/tags/雕爷/" title="雕爷">雕爷<sup>16</sup></a></li>
+		
+			<li><a href="/tags/读书/" title="读书">读书<sup>14</sup></a></li>
+		
+			<li><a href="/tags/芒格/" title="芒格">芒格<sup>14</sup></a></li>
+		
+			<li><a href="/tags/十二道锋味/" title="十二道锋味">十二道锋味<sup>14</sup></a></li>
+		
+			<li><a href="/tags/知识/" title="知识">知识<sup>13</sup></a></li>
+		
+			<li><a href="/tags/书写/" title="书写">书写<sup>13</sup></a></li>
+		
+			<li><a href="/tags/穷查理宝典/" title="穷查理宝典">穷查理宝典<sup>13</sup></a></li>
+		
+			<li><a href="/tags/吐槽/" title="吐槽">吐槽<sup>12</sup></a></li>
+		
+			<li><a href="/tags/问题/" title="问题">问题<sup>11</sup></a></li>
+		
+			<li><a href="/tags/简书/" title="简书">简书<sup>9</sup></a></li>
+		
+			<li><a href="/tags/微博/" title="微博">微博<sup>8</sup></a></li>
+		
+			<li><a href="/tags/生意/" title="生意">生意<sup>8</sup></a></li>
+		
+			<li><a href="/tags/创富/" title="创富">创富<sup>8</sup></a></li>
+		
+			<li><a href="/tags/选择/" title="选择">选择<sup>7</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+      <li><a href="http://www.jianshu.com/users/c30afb47d730/latest_articles" target="_blank" title="简书">我的简书</a></li>
+      <li><a href="http://www.zhihu.com/people/Feat" target="_blank" title="知乎">我的知乎</a></li>
+	  <li><a href="http://weibo.com/207775270" target="_blank" title="微博">我的微博</a></li>
+    </ul>
+</div>
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> 知识管理 学习思考 读书写作 <br/>
+			个人总结 生活感悟 网络分享</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/207775270" target="_blank" class="icon-weibo" title="weibo"></a>
+		
+		
+		
+		
+		
+		
+		<a href="https://www.douban.com/people/cnfeat" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+		
+		
+		<a href="mailto:cnfeat@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Pacman">Jacman</a> © 2015 
+		
+		<a href="http://www.cnfeat.com/about" target="_blank" title="cnFeat">cnFeat</a>
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="QRcode"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="Weibo"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"cnfeat"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', '014837970379017543451:yt9oonr1nva', 'cnfeat.com');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+<div id="totop">
+<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+</div>
+
+<script src="/js/totop.js"></script>
+
+
+
+
+  </body>
+</html>
